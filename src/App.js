@@ -63,7 +63,7 @@ class App extends Component {
 
   componentDidMount = () => {
     console.log("Did Mount");
-    fetch("http://product-list.glitch.me/")
+    fetch("https://product-list.glitch.me/")
     .then(response => response.json())
     .then(product => {
       this.setState({products:product});
